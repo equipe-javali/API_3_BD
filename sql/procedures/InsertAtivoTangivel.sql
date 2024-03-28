@@ -60,4 +60,4 @@ BEGIN
 END$
 
 DELIMITER ;
--- EXEC InsertAtivoTangivel(...)
+-- CALL InsertAtivoTangivel(...)

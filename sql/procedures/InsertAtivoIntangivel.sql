@@ -57,4 +57,4 @@ BEGIN
 END$
 
 DELIMITER ;
--- EXEC InsertAtivoIntangivel(...)
+-- CALL InsertAtivoIntangivel(...)
