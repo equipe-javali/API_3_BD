@@ -1,0 +1,5 @@
+CREATE TABLE UsuarioLogin (
+    id INT PRIMARY KEY NOT NULL,
+    senha VARCHAR(60) NOT NULL,
+    FOREIGN KEY id REFERENCES Usuario(id)
+);
