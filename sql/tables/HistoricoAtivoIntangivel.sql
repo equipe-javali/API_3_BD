@@ -1,0 +1,22 @@
+create table HistoricoAtivoIntangivel (
+    id int primary key not null auto_increment,
+    id_ativo_intangivel int,
+    data_inicio date,
+    data_fim date,
+    nome varchar(100),
+    custo_aquisicao int,
+    data_aquisicao date,
+    data_expiracao date,
+    numero_identificacao int,
+    tipo varchar(50),
+    tag varchar(50),
+    grau_importancia int,
+    status varchar(50),
+    ultima_atualizacao date,
+    id_responsavel int,
+    descricao varchar(500),
+    id_nota_fiscal int,
+    foreign key (id_ativo_intangivel) references AtivoIntangivel(id),
+    foreign key (id_responsavel) references Usuario(id),
+    foreign key (id_nota_fiscal) references NotaFiscal(id)
+)
