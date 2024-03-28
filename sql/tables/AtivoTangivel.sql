@@ -1,6 +1,6 @@
-create table AtivoTangivel (
-    id_ativo int primary key not null auto_increment,
-    marca varchar(100),
-    garantia date,
-    data_aquisicao date
-)
+CREATE TABLE AtivoTangivel (
+    id_ativo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    marca VARCHAR(100),
+    garantia DATE,
+    data_aquisicao DATE
+);
