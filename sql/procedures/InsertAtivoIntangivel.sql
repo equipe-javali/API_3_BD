@@ -1,6 +1,6 @@
 DELIMITER $
 
-CREATE PROCEDURE InsertAtivoTangivel(
+CREATE PROCEDURE InsertAtivoIntangivel(
     IN nome VARCHAR(100),
     IN custo_aquisicao INT,
     IN tipo VARCHAR(20),
@@ -12,8 +12,7 @@ CREATE PROCEDURE InsertAtivoTangivel(
     IN descricao VARCHAR(500),
     IN numero_identificacao VARCHAR(50),
     IN data_aquisicao DATE,
-    IN marca VARCHAR(100),
-    IN garantia DATE
+    IN data_expiracao DATE
 )
 BEGIN
     INSERT INTO Ativo(
@@ -45,19 +44,17 @@ BEGIN
 
     SET @id_ativo = LAST_INSERT_ID();
 
-    INSERT INTO AtivoTangivel(
+    INSERT INTO AtivoIntangivel(
         id_ativo,
-        marca,
-        garantia,
-        data_aquisicao
+        data_aquisicao,
+        data_expiracao
     )
     VALUES(
         @id_ativo,
-        marca,
-        garantia,
-        data_aquisicao
+        data_aquisicao,
+        data_expiracao
     );
 END$
 
 DELIMITER ;
--- EXEC InsertAtivoTangivel(...)
+-- EXEC InsertAtivoIntangivel(...)
