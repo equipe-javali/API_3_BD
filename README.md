@@ -17,7 +17,7 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 
 | Colunas | Tipo de dados | Comprimento | Restrições | Valor padrão | Descrição |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| id | INT | Default | PK, NOT NULL | auto_increment | Número de identificação do ativo |
+| id | INT | Default | PK, NOT NULL | IDENTITY | Número de identificação do ativo |
 | nome | VARCHAR | 100 | NOT NULL | N/A | Nome do ativo |
 | custo_aquisicao | INT | Default | N/A | N/A | Custo da aquisição do ativo |
 | tipo | VARCHAR | 20 | NOT NULL | N/A | Tipo do ativo |
@@ -51,5 +51,32 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
 | data_aquisicao | DATE | Default | N/A | N/A | Data de aquisição do ativo |
 | data_expiracao | DATE | Default | N/A | N/A | Data de expiração do ativo |
+
+</details>
+</details>
+
+<details>
+<summary>Usuario</summary>
+
+| Colunas | Tipo de dados | Comprimento | Restrições | Valor padrão | Descrição |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| id | INT | Default | PK, NOT NULL | SERIAL | Número de identificação do usuário |
+| nome | VARCHAR | 100 | N/A | N/A | Nome do usuário |
+| cpf | VARCHAR | 11 | N/A | N/A | Número de CPF do usuário |
+| nascimento | DATE | Default | N/A | N/A | Data de nascimento do usuário |
+| departamento | VARCHAR | 20 | N/A | N/A | Departamento do usuário |
+| telefone | VARCHAR | 20 | N/A | N/A | Número de telefone do usuário |
+| email | VARCHAR | 100 | N/A | N/A | Email do usuário |
+
+</details>
+</details>
+
+<details>
+<summary>UsuarioLogin</summary>
+
+| Colunas | Tipo de dados | Comprimento | Restrições | Valor padrão | Descrição |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| id | INT | Default | PK, FK, NOT NULL | SERIAL | Número de identificação do usuário |
+| senha | VARCHAR | 60 | N/A | N/A | Email do usuário |
 
 </details>
