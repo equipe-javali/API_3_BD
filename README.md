@@ -44,6 +44,8 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
 | garantia | DATE | Default | N/A | N/A | Data de expiração da garantia do ativo |
+| taxa_depreciacao | DECIMAL | Default | N/A | N/A | Taxa de depreciação no período |
+| periodo_depreciacao | VARCHAR | 30 | N/A | N/A | Período em que ocorre a depreciação |
 
 </details>
 
@@ -54,6 +56,8 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
 | data_expiracao | DATE | Default | N/A | N/A | Data de expiração do ativo |
+| taxa_amortizacao | DECIMAL | Default | N/A | N/A | Taxa de amortização no período |
+| periodo_amortizacao | VARCHAR | 30 | N/A | N/A | Período em que ocorre a amortização |
 
 </details>
 </details>
