@@ -1,5 +1,5 @@
 CREATE TABLE HistoricoAtivoTangivel (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id SERIAL PRIMARY KEY,
     id_ativo_tangivel INT NOT NULL,
     data_alteracao DATE,
     nome VARCHAR(100),
@@ -7,16 +7,16 @@ CREATE TABLE HistoricoAtivoTangivel (
     custo_aquisicao INT,
     garantia DATE,
     data_aquisicao DATE,
-    numero_identificador VARCHAR(50),
+    numero_identificacao VARCHAR(50),
     ultima_atualizacao DATE,
-    tipo VARCHAR(20)(50),
-    tag VARCHAR(20)(50),
+    tipo VARCHAR(50),
+    tag VARCHAR(50),
     grau_importancia INT,
     status VARCHAR(50),
     id_responsavel INT,
     descricao VARCHAR(500),
     id_nota_fiscal INT,
-    FOREIGN KEY (id_ativo_tangivel) REFERENCES AtivoTangivel(id),
+    FOREIGN KEY (id_ativo_tangivel) REFERENCES AtivoTangivel(id_ativo),
     FOREIGN KEY (id_responsavel) REFERENCES Usuario(id),
     FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id)
-)
+);

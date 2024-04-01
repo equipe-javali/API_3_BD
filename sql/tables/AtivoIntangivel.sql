@@ -1,5 +1,4 @@
 CREATE TABLE AtivoIntangivel (
-    id_ativo INT PRIMARY KEY NOT NULL,
-    data_aquisicao DATE,
+    id_ativo SERIAL PRIMARY KEY,
     data_expiracao DATE
 );

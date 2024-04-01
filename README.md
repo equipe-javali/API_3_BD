@@ -32,6 +32,8 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 | id_nota_fiscal | INT | Default | FK | N/A | Id da nota fiscal do ativo |
 | descricao | VARCHAR | 500 | N/A | N/A | Descrição do ativo |
 | ultima_atualizacao | DATE | Default | N/A | N/A | Última data em que o ativo foi atualizado |
+| data_aquisicao | DATE | Default | N/A | N/A | Data de aquisição do ativo |
+| marca | VARCHAR | 100 | N/A | N/A | Marca do ativo |
 
 </details>
 
@@ -41,9 +43,7 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 | Colunas | Tipo de dados | Comprimento | Restrições | Valor padrão | Descrição |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
-| marca | VARCHAR | 100 | N/A | N/A | Marca do ativo |
 | garantia | DATE | Default | N/A | N/A | Data de expiração da garantia do ativo |
-| data_aquisicao | DATE | Default | N/A | N/A | Data de aquisição do ativo |
 
 </details>
 
@@ -53,7 +53,6 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 | Colunas | Tipo de dados | Comprimento | Restrições | Valor padrão | Descrição |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
-| data_aquisicao | DATE | Default | N/A | N/A | Data de aquisição do ativo |
 | data_expiracao | DATE | Default | N/A | N/A | Data de expiração do ativo |
 
 </details>
