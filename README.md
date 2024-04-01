@@ -1,6 +1,10 @@
 # API_3_BD
 Referente ao Banco de Dados da API do terceiro semestre da FATEC
 
+# Modelo
+
+![Modelo do banco de dados](./modelo/Modelo.jpg)
+
 # Diretórios
 
 * `./modelo` - Arquivos do modelo de dados
