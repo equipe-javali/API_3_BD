@@ -34,6 +34,7 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 | ultima_atualizacao | DATE | Default | N/A | N/A | Última data em que o ativo foi atualizado |
 | data_aquisicao | DATE | Default | N/A | N/A | Data de aquisição do ativo |
 | marca | VARCHAR | 100 | N/A | N/A | Marca do ativo |
+| campos_personalizados | VARCHAR | MAX | N/A | N/A | JSON contendo os campos personalizados do ativo |
 
 </details>
 

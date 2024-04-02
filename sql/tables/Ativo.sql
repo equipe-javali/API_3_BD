@@ -13,5 +13,6 @@ CREATE TABLE Ativo (
     ultima_atualizacao DATE,
     data_aquisicao DATE,
     marca VARCHAR(100),
+    campos_personalizados VARCHAR(MAX),
     FOREIGN KEY (id_responsavel) REFERENCES Usuario(id)
 );
