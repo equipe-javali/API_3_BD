@@ -1,5 +1,5 @@
 CREATE TABLE Usuario (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id SERIAL PRIMARY KEY,
     nome VARCHAR(100),
     cpf VARCHAR(11),
     nascimento DATE,

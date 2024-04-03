@@ -87,7 +87,7 @@ BEGIN
         periodo_depreciacao
     )
     VALUES(
-        @id_ativo,
+        id_ativo,
         garantia,
         taxa_depreciacao,
         periodo_depreciacao
