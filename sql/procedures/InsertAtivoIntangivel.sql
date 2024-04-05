@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION InsertAtivoIntangivel(
     nome VARCHAR(100),
-    custo_aquisicao INT,
+    custo_aquisicao NUMERIC(2),
     tipo VARCHAR(20),
     tag VARCHAR(20),
     grau_importancia INT,
@@ -18,7 +18,7 @@ CREATE OR REPLACE FUNCTION InsertAtivoIntangivel(
     campos_personalizados TEXT,
     -- AtivoTangivel
     data_expiracao DATE,
-    taxa_amortizacao DECIMAL,
+    taxa_amortizacao NUMERIC(2),
     periodo_amortizacao VARCHAR(30)
     -- AtivoTangivel
 )

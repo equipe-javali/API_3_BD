@@ -1,7 +1,7 @@
 CREATE TABLE Ativo (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100),
-    custo_aquisicao INT,
+    custo_aquisicao NUMERIC(2),
     tipo VARCHAR(20),
     tag VARCHAR(20),
     grau_importancia INT,

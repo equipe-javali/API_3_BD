@@ -23,7 +23,7 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id | INT | Default | PK, NOT NULL | IDENTITY | Número de identificação do ativo |
 | nome | VARCHAR | 100 | NOT NULL | N/A | Nome do ativo |
-| custo_aquisicao | INT | Default | N/A | N/A | Custo da aquisição do ativo |
+| custo_aquisicao | NUMERIC | (2) | N/A | N/A | Custo da aquisição do ativo |
 | tipo | VARCHAR | 20 | NOT NULL | N/A | Tipo do ativo |
 | tag | VARCHAR | 20 | NOT NULL | N/A | Tag do ativo |
 | grau_importancia | INT | Default | N/A | N/A | Grau de importância do ativo |
@@ -45,7 +45,7 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
 | garantia | DATE | Default | N/A | N/A | Data de expiração da garantia do ativo |
-| taxa_depreciacao | DECIMAL | Default | N/A | N/A | Taxa de depreciação no período |
+| taxa_depreciacao | NUMERIC | (2) | N/A | N/A | Taxa de depreciação no período |
 | periodo_depreciacao | VARCHAR | 30 | N/A | N/A | Período em que ocorre a depreciação |
 
 </details>
@@ -57,10 +57,9 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | id_ativo | INT | Default | PK, FK, NOT NULL | N/A | Número de identificação do ativo |
 | data_expiracao | DATE | Default | N/A | N/A | Data de expiração do ativo |
-| taxa_amortizacao | DECIMAL | Default | N/A | N/A | Taxa de amortização no período |
+| taxa_amortizacao | NUMERIC | (2) | N/A | N/A | Taxa de amortização no período |
 | periodo_amortizacao | VARCHAR | 30 | N/A | N/A | Período em que ocorre a amortização |
 
-</details>
 </details>
 
 <details>
@@ -76,7 +75,6 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 | telefone | VARCHAR | 20 | N/A | N/A | Número de telefone do usuário |
 | email | VARCHAR | 100 | N/A | N/A | Email do usuário |
 
-</details>
 </details>
 
 <details>

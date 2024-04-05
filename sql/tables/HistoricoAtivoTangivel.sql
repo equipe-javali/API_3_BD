@@ -4,7 +4,7 @@ CREATE TABLE HistoricoAtivoTangivel (
     data_alteracao DATE,
     nome VARCHAR(100),
     marca VARCHAR(100),
-    custo_aquisicao INT,
+    custo_aquisicao NUMERIC(2),
     garantia DATE,
     data_aquisicao DATE,
     numero_identificacao VARCHAR(50),
