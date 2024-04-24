@@ -5,5 +5,6 @@ CREATE TABLE Usuario (
     nascimento DATE,
     departamento VARCHAR(20),
     telefone VARCHAR(20),
-    email VARCHAR(100)
+    email VARCHAR(100),
+    status VARCHAR(100)
 );
