@@ -6,5 +6,6 @@ CREATE TABLE Usuario (
     departamento VARCHAR(20),
     telefone VARCHAR(20),
     email VARCHAR(100),
+    perfil smallint,
     status VARCHAR(100)
 );

@@ -3,7 +3,7 @@ Referente ao Banco de Dados da API do terceiro semestre da FATEC
 
 # Modelo
 
-![Modelo do banco de dados](./modelo/Modelo.jpg)
+![Modelo do banco de dados](./modelo/Modelo.png)
 
 # Diretórios
 
