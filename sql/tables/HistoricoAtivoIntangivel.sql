@@ -7,7 +7,7 @@ CREATE TABLE HistoricoAtivoIntangivel (
     custo_aquisicao NUMERIC(2),
     data_aquisicao DATE,
     data_expiracao DATE,
-    numero_identificacao INT,
+    numero_identificacao VARCHAR(50),
     tipo VARCHAR(50),
     tag VARCHAR(50),
     grau_importancia INT,
