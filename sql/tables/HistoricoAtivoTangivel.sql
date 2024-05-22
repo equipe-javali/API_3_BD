@@ -1,7 +1,6 @@
 CREATE TABLE HistoricoAtivoTangivel (
     id SERIAL PRIMARY KEY,
     id_ativo_tangivel INT NOT NULL,
-    data_alteracao DATE,
     nome VARCHAR(100),
     marca VARCHAR(100),
     custo_aquisicao NUMERIC(2),
