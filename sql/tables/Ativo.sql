@@ -12,6 +12,7 @@ CREATE TABLE Ativo (
     numero_identificacao VARCHAR(50),
     ultima_atualizacao DATE,
     data_aquisicao DATE,
+    data_cadastro DATE,
     marca VARCHAR(100),
     campos_personalizados TEXT,
     FOREIGN KEY (id_responsavel) REFERENCES Usuario(id)

@@ -6,6 +6,7 @@ CREATE TABLE HistoricoAtivoTangivel (
     custo_aquisicao NUMERIC(2),
     garantia DATE,
     data_aquisicao DATE,
+    data_cadastro DATE,
     numero_identificacao VARCHAR(50),
     ultima_atualizacao DATE,
     tipo VARCHAR(50),
