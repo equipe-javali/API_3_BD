@@ -1,19 +1,22 @@
-CREATE TABLE Ativo (
-    id SERIAL PRIMARY KEY,
+CREATE TABLE ativo (
+    id BIGSERIAL,
     nome VARCHAR(100),
-    custo_aquisicao NUMERIC(2),
+    custo_aquisicao NUMERIC(10, 2),
     tipo VARCHAR(20),
     tag VARCHAR(20),
-    grau_importancia INT,
+    grau_importancia BIGINT,
     status VARCHAR(50),
-    id_responsavel INT,
-    id_nota_fiscal INT,
+    id_responsavel BIGINT,
+    id_nota_fiscal BIGINT,
     descricao VARCHAR(500),
     numero_identificacao VARCHAR(50),
     ultima_atualizacao DATE,
-    data_aquisicao DATE,
-    data_cadastro DATE,
     marca VARCHAR(100),
+    data_aquisicao DATE,
     campos_personalizados TEXT,
-    FOREIGN KEY (id_responsavel) REFERENCES Usuario(id)
+    data_cadastro DATE,
+    valor_residual NUMERIC,
+    CONSTRAINT ativo_pkey PRIMARY KEY (id),
+    CONSTRAINT ativo_id_nota_fiscal_fkey FOREIGN KEY (id_nota_fiscal) REFERENCES notafiscal (id) ON UPDATE CASCADE ON DELETE SET NULL,
+    CONSTRAINT ativo_id_responsavel_fkey FOREIGN KEY (id_responsavel) REFERENCES usuario (id) ON UPDATE CASCADE ON DELETE SET NULL
 );
